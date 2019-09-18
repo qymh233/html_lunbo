@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>lun</title>
+
+</head>
+
+<body>
+    <img id="lun" src="img/1.png" width="100%" height="100%">
+
+    <script>
+
+        var number = 1;
+        function fun() {
+            number++;
+            if (number > 3) {
+                number = 1;
+            }
+            var img = document.getElementById("lun");
+            img.src = "img/" + number + ".png";
+        }
+        setInterval(fun, 3000);
+    </script>
+
+</body>
+
+</html>
